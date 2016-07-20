@@ -93,44 +93,6 @@ public class Login_TC extends CommonMethods{
 		}
 	}
 	
-	@Test
-	public void TC_04_verifyLogout_button(){
-		try {
-			testCaseName = new Object() {}.getClass().getEnclosingMethod().getName();
-			logMessage("\nTest case name: "+ testCaseName);
-			
-			// Verify logout button is displayed or not
-			if(isElementDisplayed("xpath", readLoginPageProperties.get("logOutButton"))){
-				logMessage("Logout button is displayed");
-			}else{
-				logErrorMessage("Logout button is not displayed");
-			}
-		} catch (Exception e) {
-			logErrorMessage("Error while verifying logout button");
-			e.printStackTrace();
-			assert false;
-		}
-	}
-	
-	@Test
-	public void TC_05_verifyLogout_button(){
-		try {
-			testCaseName = new Object() {}.getClass().getEnclosingMethod().getName();
-			logMessage("\nTest case name: "+ testCaseName);
-			
-			// Verify logout button is displayed or not
-			if(isElementDisplayed("xpath", readLoginPageProperties.get("logOutButton"))){
-				logMessage("Logout button is displayed");
-			}else{
-				logErrorMessage("Logout button is not displayed");
-			}
-		} catch (Exception e) {
-			logErrorMessage("Error while verifying logout button");
-			e.printStackTrace();
-			assert false;
-		}
-	}
-	
 	@AfterClass 
 	public void logOut(){
 		try {
