@@ -25,8 +25,8 @@ public class Login_TC extends CommonMethods{
 	@BeforeClass
 	public void openBrowser(){
 		try {
-			readLoginPageProperties = Utlities.readProperties("..\\Framework\\properties\\LoginProperties.properties");
-			readConfigData=Utlities.readProperties("..\\Framework\\properties\\config.properties");
+			readLoginPageProperties = Utlities.readProperties(".\\properties\\LoginProperties.properties");
+			readConfigData=Utlities.readProperties(".\\properties\\config.properties");
 			
 			// Invoke the application
 			invokeApp();

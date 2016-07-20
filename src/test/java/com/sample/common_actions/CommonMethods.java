@@ -33,7 +33,7 @@ public class CommonMethods {
 	 * @author Raju
 	 */
 	public static void invokeApp(){
-		readConfigData=Utlities.readProperties("..\\Framework\\properties\\config.properties");
+		readConfigData=Utlities.readProperties(".\\properties\\config.properties");
 		if(readConfigData.get("browserName").toLowerCase().equals("ie")){
 			System.setProperty("webdriver.ie.driver", ".\\drivers\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
@@ -98,7 +98,7 @@ public class CommonMethods {
 	public static String readPropertyFile(String fileName, String property) {
 		prop = new Properties();
 		try {
-			propFis = new FileInputStream(new File("..\\Framework\\properties\\config.properties"));
+			propFis = new FileInputStream(new File(".\\properties\\config.properties"));
 			prop.load(propFis);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
