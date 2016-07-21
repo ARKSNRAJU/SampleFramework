@@ -103,6 +103,7 @@ public class Login_TC extends CommonMethods{
 			
 			// Close the application
 			quit();
+			
 		} catch (Exception e) {
 			logErrorMessage("Error while logout in after class");
 			e.printStackTrace();
